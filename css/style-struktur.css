@@ -1,0 +1,96 @@
+/* style header */
+header {
+	height: 60vh;
+	background-position: 0 -80px;
+}
+
+/* style struktur */
+.struktur h2 {
+	font-size: 40px;
+	text-align: center;
+	margin: 30px auto;
+}
+
+.profil	{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 50px auto;
+}
+
+.profil div {
+	width: 22%;
+	height: 300px;
+	background: lavender;
+}
+
+.profil img {
+	width: 100%;
+	height: 100%;
+}
+
+.profil h3, .profil p {
+	margin: 15px;
+	padding: 10px auto;
+	text-align: justify;
+}
+
+.box-1 {order: 1;}
+.box-2 {order: 2;}
+.box-3 {order: 3;}
+.box-4 {order: 4;}
+.box-5 {order: 6;}
+.box-6 {order: 5;}
+.box-7 {order: 8;}
+.box-8 {order: 7;}
+.box-9 {order: 9;}
+.box-10 {order: 10;}
+.box-11 {order: 11;}
+.box-12 {order: 12;}
+.box-13 {order: 14;}
+.box-14 {order: 13;}
+.box-15 {order: 16;}
+.box-16 {order: 15;}
+
+
+
+@media screen and (max-width: 900px)  {
+	.profil div {width: 45%;}
+.box-1 {order: 1;}
+.box-2 {order: 2;}
+.box-3 {order: 4;}
+.box-4 {order: 3;}
+.box-5 {order: 5;}
+.box-6 {order: 6;}
+.box-7 {order: 8;}
+.box-8 {order: 7;}
+.box-9 {order: 9;}
+.box-10 {order: 10;}
+.box-11 {order: 12;}
+.box-12 {order: 11;}
+.box-13 {order: 13;}
+.box-14 {order: 14;}
+.box-15 {order: 16;}
+.box-16 {order: 15;}
+}
+
+
+@media screen and (max-width: 550px)  {
+	.profil {
+		display: block;
+		margin:0;
+		
+	}
+
+	.profil div {
+		width: 90%;
+		box-sizing: border-box;
+		line-height: 25px;
+		margin: 0 auto;
+	}
+
+	.profil h3, .profil p {
+		margin: 0;
+		padding: 15px;
+	}
+}

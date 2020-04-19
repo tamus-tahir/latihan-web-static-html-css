@@ -1,0 +1,382 @@
+/* style awal */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+}
+
+body {
+	width: 100%;
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+	text-decoration: underline;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+/* style header */
+header {
+	background: linear-gradient(-40deg, rgba(200, 0, 0, 0.5),rgba(0, 200, 0, 0.5),rgba(0, 0, 0, 200.5)),url(../img/header.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+}
+
+/* style text head */
+.text-head {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+}
+
+/* style nav */
+nav {
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: 80px;
+	padding: 0px 3%;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,.7);
+} 
+
+nav a img {
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin: auto;
+}
+
+nav ul {
+	list-style: none;
+	float: right;
+	line-height: 80px;
+}
+
+nav ul li {
+	float: left;
+	position: relative;
+}
+
+nav ul li a {
+	line-height: 80px;
+	color: white;
+	padding: 12px 20px;
+	text-decoration: none;
+	text-transform: uppercase;	
+	font-size: 15px;
+} 
+
+nav ul li a:hover {
+	color: red;
+} 
+
+nav ul li a.daftar {
+	background: rgba(255, 0, 0, 0.5);
+	color: white;
+	border-radius: 6px;
+}
+
+nav ul li a.daftar:hover {
+	background: rgba(0, 0, 255, 0.5);
+	color: white;
+}
+
+nav ul li a:hover {
+	transition: 0.8s;
+	color: red;
+}
+
+
+/* drop down menu */
+nav ul li ul {
+	display: none;
+	position: absolute;
+	z-index: 900;
+	background-color: rgba(0, 0, 0, .7);
+	padding: 0 10px;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul li ul li {
+	width: 250px;
+}
+
+nav ul li ul li a {
+	line-height: 60px;
+	padding: 0 10px;
+	margin: 0;
+}
+
+nav ul li ul li a:hover {
+	color: red;
+}
+
+
+/* style gradient background*/
+.gradient-background {
+	background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(../img/header.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+/* style sambutan */
+.flex {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.sambutan img {
+	border: 5px solid black;
+	width: 40%;
+	height: 400px;
+	margin: 2% auto;
+}
+
+.sambutan img:hover {
+	border: 5px solid red;
+	transition: 0.8s;
+}
+
+.sambutan p {
+	width: 40%;
+	text-align: justify;
+	line-height: 40px;
+	margin: 5%;
+	font-size: 20px;
+	box-sizing: border-box;
+	margin: auto;
+	padding: 3% 0;	
+}
+
+@media screen and (max-width: 750px) {
+	.sambutan {
+		display: block;
+	}
+
+	.sambutan img {
+		width: 90%;
+		margin: 5%;
+	}
+
+	.sambutan p {
+		width: 90%;
+		margin: 5%;
+	}
+}
+
+
+/* style keunggulan */
+.keunggulan {
+	padding-bottom: 30px;
+}
+
+.keunggulan h2 {
+	text-align: center;
+	font-size: 40px;
+	line-height: 120px;
+	color: white; 
+}
+
+.content-keunggulan {
+	width: 250px;
+	margin: 5px;
+	text-align: center;
+	padding: 17px;
+	color: white;
+}
+
+.content-keunggulan:hover {
+	background: rgba(0,0,255,.2);
+	border-radius: 15px;
+	transition: 0.8s;
+}
+
+.content-keunggulan h3 { 
+	color: white;
+	padding: 20px;
+ }
+
+.content-keunggulan img {
+	width: 90px;
+}
+
+
+/* style mitra */
+.mitra {
+	padding-bottom: 30px;
+}
+
+.mitra h2 {
+	text-align: center;
+	font-size: 40px;
+	line-height: 100px;
+}
+
+.content-mitra h2 {
+	text-align: center;
+	font-size: 40px;
+}
+
+.content-mitra p {
+	text-align: center;
+	background-color: sienna;
+	font-size: 20px;
+	margin: 10px 30px;
+	padding: 5px 20px;
+	line-height: 50px;
+	border: 2px solid black;
+	height: 50px;
+	color: white;
+	box-shadow: 5px 5px 10px black;
+	border-radius: 15px;
+}
+
+.content-mitra p:hover {
+	box-shadow: 5px 5px 10px blue;
+	transition: 0.8s;
+}
+
+
+/* style footer */
+/* style contact */
+.contact {
+	padding-bottom: 3%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-column-gap: 5%;
+	grid-row-gap: 2%;
+}
+
+.contact h2 {
+	font-size: 25px;
+	text-align: center;
+	color: white;
+	margin: 5% auto;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 14fr;
+	margin: 3%;
+	box-sizing: border-box;
+}
+
+.grid img {
+	height: 50px;
+}
+
+.grid ul {
+	text-align: justify;
+	list-style: none;
+	color: white;
+	margin-left: 7%;
+}
+
+/* style sosmed */
+.sosmed {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	margin: 5% 15%;
+	box-sizing: border-box;
+}
+
+.sosmed img {
+	height: 50px;
+}
+
+/* style kirim pesan*/
+.kirim-pesan form {
+	margin: 4%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-column-gap: 5%;
+	grid-row-gap: 4%;
+}
+
+.data {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-column-gap: 5%;
+}
+
+.data input {
+	color: white;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	outline: none;
+	border-bottom: 2px solid red;
+	height: 50px;
+	padding: 0 10px;
+}
+
+.kirim-pesan textarea {
+	color: white;
+	background: rgba(0, 0, 0, 0);
+	border: none;
+	border-bottom: 2px solid red;
+	height: 120px;
+	padding: 5px 10px;
+	resize: vertical;
+	max-height: 250px;
+	margin-bottom: 5px;
+}
+
+.kirim-pesan button {
+	height: 50px;
+	background: rgba(255, 0, 0, 0.5);
+	border-radius: 15px;
+}
+
+.kirim-pesan button:hover {
+	transition: .8s;
+	background: rgba(0, 0, 255, 0.5);
+}
+
+.kirim-pesan button p {
+	color: white;
+	font-size: 22px;
+}
+
+::placeholder {
+	color: white;
+	opacity: 1;
+	font-size: 18px;
+}
+
+/* style peta */
+.peta { margin: 0;}
+
+iframe { width: 100% }
+
+/* style copyright */
+.copyright {
+	clear: both;
+	width: 100%;
+	height: 60px;
+	background-color: rgba(0,0,0,.9);
+}
+
+.copyright p {
+	color: white;
+	text-align: center;
+	line-height: 60px;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+
